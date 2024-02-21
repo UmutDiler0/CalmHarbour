@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/pulseText"
+        android:layout_width="409dp"
+        android:layout_height="133dp"
+        android:background="@drawable/pulse3"
+        android:text="Your Pulse:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="203dp"
+        android:layout_height="173dp"
+        android:onClick="playMusic"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/listen" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="203dp"
+        android:layout_height="173dp"
+        android:onClick="silent"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/distrub" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="205dp"
+        android:layout_height="178dp"
+        android:onClick="SOS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/sos1" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="203dp"
+        android:layout_height="173dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton3"
+        android:onClick="showPictures"
+        app:srcCompat="@drawable/pictures" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="201dp"
+        android:layout_height="176dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="workoutButton"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:srcCompat="@drawable/train" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="198dp"
+        android:layout_height="172dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        android:onClick="addMusic"
+        app:srcCompat="@drawable/playmsc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
